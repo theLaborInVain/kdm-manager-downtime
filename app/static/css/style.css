@@ -1,7 +1,27 @@
-html {font-family: 'Ruda'}
+html {font-family: 'Ruda'; font-size: 35px; color: #333; }
 
-h1, h2 {text-transform: uppercase; }
-h1 {font-size: 3em; }
-h2 {font-size: 2em; font-family: 'Silverado';}
+h1, h2 {
+    text-transform: uppercase;
+    font-family: 'Silverado';
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0; 
+}
+h1 {font-size: 6vw; color: #666; }
+h2 {font-size: 13vw; color: #ccc; letter-spacing: 0.06em;}
 
-#main_container {width: 90%; height: 90%; border: 0.3em solid #aaa; }
+li {margin: 1em; }
+p {line-height: 1.8em; }
+
+#main_container {
+    width: 90%;
+    height: 95%;
+    border: 0.1em solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    transform: translate(5%, 2%)
+}
+
+.subtitle {margin-top: 0.5em; margin-bottom: 1em;  }
+.centered {display: block; text-align: center; }
+.spacer {margin: 2em; }
