@@ -1,5 +1,11 @@
 html {font-family: 'Ruda'; font-size: 35px; color: #333; }
 
+a {text-decoration: none;}
+a {color: #000; font-weight: bold; }
+a:visited: {color: #666; }
+a:hover: {color: #DC2426; }
+
+
 h1, h2 {
     text-transform: uppercase;
     font-family: 'Silverado';
@@ -13,10 +19,13 @@ h2 {font-size: 13vw; color: #ccc; letter-spacing: 0.06em;}
 li {margin: 1em; }
 p {line-height: 1.8em; }
 
+.clickable {cursor: pointer; }
+.special_showdown {color: #DC2426; }
+
 #main_container {
     width: 90%;
     height: 95%;
-    border: 0.1em solid #ccc;
+    border: 0.08em solid #ddd;
     border-left: 0;
     border-right: 0;
     transform: translate(5%, 2%)
@@ -25,3 +34,37 @@ p {line-height: 1.8em; }
 .subtitle {margin-top: 0.5em; margin-bottom: 1em;  }
 .centered {display: block; text-align: center; }
 .spacer {margin: 2em; }
+
+.links_grid {display: flex; width: 90%; margin: 0 auto; align-items: center; justify-content: space-evenly; margin-top: 2.5em; }
+.link_container {width: 40%; text-align: center; }
+.link_container img {width: 95%; filter: sepia(100%);}
+.link_caption {font-size: 0.9em; display: block; }
+
+#footer {position: absolute; bottom: 0.5em; right: 0; text-align: right; padding:0; padding-right: 1.2em; font-size: 0.7em; }
+.footer_link {font-weight: normal; }
+
+/*
+
+     mobile resolution ends here!
+
+*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+{
+    html { font-size: 24px; }
+    h1 {font-size: 4vw;}
+    h2 {font-size: 9vw;}
+    .message {display: block; width: 70%; margin: 0 auto; }
+    .links_grid {width: 70%; margin-top: 10%; }
+}
+
+@media (min-width: 1025px)
+{
+    html { font-size: 12pt; }
+    h1 {font-size: 2vw;}
+    h2 {font-size: 5vw;}
+    .message {display: block; width: 40%; margin: 0 auto; }
+    .links_grid {width: 40%; margin-top: 5%; }
+    #footer {bottom: 0.8em; padding-right: 4%; }
+}

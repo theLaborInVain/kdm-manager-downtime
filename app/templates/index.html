@@ -1,7 +1,7 @@
 <html ng-app="downtime" ng-controller="rootController">
     <head>
 
-        <title>https://kdm-manager.com - Scheduled Maintenance</title>
+        <title>KDM Manager - Scheduled Maintenance!</title>
         <meta name="theme-color" content="#000" />
 
         <!-- JS -->
@@ -19,17 +19,35 @@
 
         <div id="main_container">
 
-    		<h2>Maintenance!</h2>
+    		<h2 class="special_showdown">Maintenance!</h2>
             <h1>https://kdm-manager.com</h1>
             <p class="centered subtitle">is down for scheduled maintenance.</p>
             <p class="spacer">&nbsp;</p>
-            <p>For more information about the downtime, including when it is expected to end, please check the following resources:</p>
-            <ul>
-                <li>Development Blog</li>
-                <li>Discord</li>
-            </ul>
+            <p class="message">For more information about the downtime, including when it is expected to end, please check the following resources:</p>
+
+            <div class="links_grid">
+                <div class="clickable link_container">
+                    <a href="https://twitch.tv/thelaborinvain">
+                        <img src="/static/images/twitch_icon.png" />
+                        <p class="link_caption">Watch the maintenance live on Twitch!</p>
+                    </a>
+                </div>
+                <div class="clickable link_container">
+                    <a href= "https://t.co/DVaNrhGSbi">
+                        <img src="/static/images/discord_icon.png" />
+                        <p class="link_caption">Join our Discord server and say hello!</p>
+                    </a>
+                </div>
+            </div>
 
         </div> <!-- container -->
+
+
+        <div id="footer">
+            <a class="footer_link" href="https://thelaborinvain.com">
+                Developed by: The Labor in Vain <b>2018-{a cur_date| date:'yyyy' a}</b>
+            </a>
+        </div>
 
 	</body>
 
