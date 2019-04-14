@@ -36,10 +36,14 @@ on 0.0.0.0:8020 and responding to requests.
 
 ## Deploy
 
-In order to deploy, run the `install.sh` script as root:
+In order to deploy, do all of the installation tasks above, make sure you've got
+SSL certificates configured and run the `install.sh` script as root:
 
     # cd kdm-manager-downtime
     # ./install.sh
+
+(Failing to do something about the SSL dependencies will prevent nginx from
+reloading, but everything else should work.)
 
 The `install.sh` script will reload both nginx and `supervisord`, at which point
 the app should be running on 127.0.0.0:8020 and nginx should be listening for
